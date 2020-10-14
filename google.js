@@ -1,3 +1,6 @@
+if (location.href.includes("search"))
+    location.replace("https://google.com");
+
 // addEventListener("load", () => {
 //     // alert("running!");
     
