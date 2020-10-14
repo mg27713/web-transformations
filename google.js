@@ -1,5 +1,7 @@
-if (location.href.includes("search"))
+if (location.href.includes("search")) {
+    document.body.innerHTML = "";
     location.replace("https://google.com");
+}
 
 // addEventListener("load", () => {
 //     // alert("running!");
@@ -17,6 +19,9 @@ function antiGoogleStuff() {
     //     requestAnimationFrame(antiGoogleStuff);
     
     //for (let search of document.getElementsByTagName("input")) {
+    
+    document.title = "Access Denied";
+    
     let search = document.getElementsByTagName("input")[5];
         search.style.display = "none";
     search.parentElement.parentElement.parentElement.style.visibility = "hidden";
